@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/medicines";
+const API_URL = "https://medicine-backend-0zwh.onrender.com/medicines";
 
 const form = document.getElementById("medicineForm");
 const table = document.getElementById("medicineTable");
