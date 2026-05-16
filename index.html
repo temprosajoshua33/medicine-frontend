@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medicine Inventory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1>Medicine Inventory System</h1>
+
+  <div class="top-bar">
+    <input type="text" id="searchInput" placeholder="Search medicine..." />
+    <h3>Total Medicines: <span id="totalMedicines">0</span></h3>
+  </div>
+
+  <form id="medicineForm">
+    <input type="text" id="name" placeholder="Medicine Name" required />
+    <input type="text" id="category" placeholder="Category" required />
+    <input type="number" id="quantity" placeholder="Quantity" required />
+    <input type="number" id="price" placeholder="Price" required />
+    <input type="date" id="expirationDate" required />
+    <button type="submit" id="submitBtn">Add Medicine</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Expiration</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="medicineTable"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
